@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:id="@+id/fill_descr"
+        android:text="Fill in the words to complete the story!"
+        android:textSize="25sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="10sp"
+        android:id="@+id/wordsLeft"
+        android:layout_below="@+id/fill_descr"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="noun            "
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/submitWord"
+        android:id="@+id/word_collec"
+        android:layout_below="@+id/wordsLeft"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submitWord"
+        android:text="OK"
+        android:layout_below="@+id/wordsLeft"
+        android:layout_alignParentEnd="true"
+        android:onClick="collectWord"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textHint"
+        android:text="Please type a/an ..."
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/word_collec"/>
+</RelativeLayout>
